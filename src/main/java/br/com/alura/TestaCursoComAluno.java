@@ -19,5 +19,10 @@ public class TestaCursoComAluno {
         System.out.println("Todos os alunos matriculados: ");
 
         colecoesJava.getAlunos().forEach(System.out::println);
+
+        System.out.println(colecoesJava.estaMatriculado(a1));
+
+        Aluno turini = new Aluno("Rodrigo Turini", 34681);
+        System.out.println(colecoesJava.estaMatriculado(turini)); // FALSE
     }
 }

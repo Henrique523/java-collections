@@ -47,4 +47,8 @@ public class Curso {
         return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + "," +
                 "aulas: " + this.aulas + "]";
     }
+
+    public boolean estaMatriculado(Aluno a1) {
+        return this.alunos.contains(a1);
+    }
 }
